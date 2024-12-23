@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNB Tech Solutions</title>
+
+    <!--
+     - favicon
+    -->
+    <link rel="shortcut icon" href="snbweb.svg" type="image/svg+xml">
+
+    <!--
+     - custom css link
+    -->
+     <link rel="stylesheet" href="assets/css/style.css">
+
+     <!--
+      - google fonts link
+     -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap"
+       rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--
+     - HEADER
+    -->
+     <header class="header" data-header>
+        <div class="container">
+
+            <a href="#" class="logo">
+                <img src="snb.svg" alt="SNB Tech">
+            </a>
+
+            <button class="nav-toggle-btn" data-nav-toggle-btn>
+                <ion-icon name="menu-outline" class="open"></ion-icon>
+                <ion-icon name="close-outline" class="close"></ion-icon>
+            </button>
+
+            <nav class="navbar">
+                <div class="container">
+                    <ul class="navbar-list">
+
+                        <li>
+                            <a href="#home" class="navbar-link" data-navbar-link>Home</a>                           
+                        </li>
+
+                        <li>
+                            <a href="#features" class="navbar-link" data-navbar-link>Features</a>                           
+                        </li>
+
+                        <li>
+                            <a href="#service" class="navbar-link" data-navbar-link>Services</a>                           
+                        </li>
+
+                        <li>
+                            <a href="#portfolio" class="navbar-link" data-navbar-link>Portfolio</a>                           
+                        </li>
+                             
+                    </ul>
+                </div>
+            </nav>
+
+            <button class="btn btn-secondary" onclick="document.querySelector('#contact').scrollIntoView({ behavior: 'smooth' });">
+                <span>Contact Us Now</span>
+                <ion-icon name="chevron-forward-outline"></ion-icon>
+            </button>
+
+        </div>
+
+     </header>
+
+
+
+     <main>
+        <article>
+
+          <!--
+            - HERO SECTION
+          -->
+            <section class="hero" id="home">
+                
+                <div class="container">
+
+                    <figure class="hero-banner">
+                        <img src="assets/images/hero.png" alt="Illustration art"  loading="lazy" 
+                        class="w-100">
+                    </figure>
+
+                    <div class="hero-content">
+                        <h2 class="h1 hero-title">Transforming Ideas into Digital Solutions</h2>
+                        <p class="section-text">
+                            Empowering businesses through innovative web solutions, impactful branding, 
+                            and insightful data analysis to help you thrive in the digital landscape.
+                        </p>
+ 
+                        <button class="btn btn-primary" onclick="document.querySelector('#footer').scrollIntoView({ behavior: 'smooth' });">
+                            <span>Contact Us Now</span>
+
+                            <ion-icon name="chevron-forward-outline"></ion-icon>
+                        </button>
+
+                    </div>
+                </div>
+            
+            </section>
+
+           <!--
+            -  FEATURES SECTION
+           -->
+            <section class="features" id="features">
+                <div class="container">
+                    <p class="section-subtitle">What We Offer</p>
+                    <h2 class="h2 section-title">Explore the key features that make us the right choice for your digital needs.</h2>
+                    <ul class="features-list">
+                        <li>
+                            <div class="features-card">
+                                <div class="card-icon">
+                                    <img src="assets/images/1.png" alt="Illustration icon">
+                                </div>
+                                <h3 class="h3 card-title">Web Development</h3>
+                                <p class="card-text">
+                                    Custom, scalable, and secure websites built to meet your unique needs.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="features-card">
+                                <div class="card-icon">
+                                    <img src="assets/images/2.png" alt="Illustration icon">
+                                </div>
+                                <h3 class="h3 card-title">Creative Design</h3>
+                                <p class="card-text">
+                                    Stand out with visually appealing designs that captivate your audience.
+                                </p>
+
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="features-card">
+                                <div class="card-icon">
+                                    <img src="assets/images/3.png" alt="Illustration icon">
+                                </div>
+                                <h3 class="h3 card-title">Data Analysis</h3>
+                                <p class="card-text">
+                                    Transform raw data into actionable insights to drive your business forward
+                                </p>
+
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+
+            </section>
+
+           <!--
+            - SERVICE SECTION
+           -->
+
+           <section class="service" id="service">
+            <div class="container">
+
+                <figure class="service-banner">
+                    <img src="assets/images/services-3.png" alt="Illustration art" loading="lazy" class="w-100">            
+                </figure>
+
+                <div class="service-content">
+                    <p class="section-subtitle">Services We Provide</p>
+                    <h2 class="h2 section-title">Comprehensive solutions for businesses of all sizes.</h2>
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <div class="service-item-icon">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-item-title">Custom Website Design</h3>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-item-icon">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-item-title">Website Maintenance</h3>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-item-icon">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-item-title">Web Redesign</h3>
+                        </li>
+
+
+                    </ul>
+                    
+                </div>
+
+                <figure class="service-banner">
+                    <img src="assets/images/services-4.png" alt="Illustration art" loading="lazy" class="w-100">            
+                </figure>
+
+                <div class="service-content">
+                    <p class="section-subtitle">Our Services</p>
+                    <h2 class="h2 section-title">Streamlining your business with smart tech.</h2>
+                    <ul class="service-list">
+
+                        <li class="service-item">
+                            <div class="service-item-icon">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-item-title">Comprehensive Branding</h3>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-item-icon">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-item-title">Graphics Design</h3>
+                        </li>
+
+                        <li class="service-item">
+                            <div class="service-item-icon">
+                                <ion-icon name="checkmark-outline"></ion-icon>
+                            </div>
+                            <h3 class="service-item-title">insightful Analytics</h3>
+                        </li>
+
+                    </ul>
+                    
+                </div>
+
+            </div>
+           </section>
+
+            <!--
+            - PORTFOLIO
+           -->
+
+           <section class="portfolio" id="portfolio">
+            <div class="container">
+                <p class="section-subtitle">Our Latest Work</p>
+                <h2 class="h2 section-title">Check out some of the projects we’ve delivered for our clients</h2>
+
+                <ul class="portfolio-list">
+                    <li>
+                        <div class="portfolio-card">
+
+                            <figure class="portfolio-banner">
+                                <a href="#">
+                                    <img src="assets/images/blog-1.jpg" alt="Accounting Firm Website we built" 
+                                    loading="lazy" class="w-100">
+                                </a>
+                            </figure>
+
+                            <div class="portfolio-content">
+                                <ul class="portfolio-meta-list">
+                                    <li class="portfolio-meta-item">
+                                        <ion-icon name="pricetag-outline"></ion-icon>
+                  
+                                        <a href="#" class="portfolio-meta-link">Website</a>
+                                    </li>
+                
+                                </ul>
+                                <h3 class="portfolio-title">~Accounting Firm~</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-card">
+
+                            <figure class="portfolio-banner">
+                                <a href="#">
+                                    <img src="assets/images/blog-2.jpg" alt="Personal portfolio website we built" 
+                                    loading="lazy" class="w-100">
+                                </a>
+                            </figure>
+
+                            <div class="portfolio-content">
+                                <ul class="portfolio-meta-list">
+                                    <li class="portfolio-meta-item">
+                                        <ion-icon name="pricetag-outline"></ion-icon>
+                  
+                                        <a href="#" class="portfolio-meta-link">Website</a>
+                                    </li>
+
+                                    
+                                </ul>
+                                <h3 class="portfolio-title">~Personal Portfolio~</h3>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="portfolio-card">
+
+                            <figure class="portfolio-banner">
+                                <a href="#">
+                                    <img src="assets/images/blog-3.jpg" alt="Website for Horticulture company" 
+                                    loading="lazy" class="w-100">
+                                </a>
+                            </figure>
+
+                            <div class="portfolio-content">
+                                <ul class="portfolio-meta-list">
+                                    <li class="portfolio-meta-item">
+                                        <ion-icon name="pricetag-outline"></ion-icon>
+                  
+                                        <a href="#" class="portfolio-meta-link">Website</a>
+                                    </li>
+                                    
+                                </ul>
+                                <h3 class="portfolio-title">~Horticulture Exports~</h3>
+                            </div>
+                        </div>
+                    </li>
+
+              
+                </ul>
+
+            </div>
+           </section>
+           
+           
+
+        </article>
+     </main>
+
+
+    <!--
+     - FOOTER
+    -->
+
+    <footer class="footer"   id="footer"  > 
+
+        <div class="footer-top">
+          <div class="container">
+    
+            <div class="footer-brand">
+    
+              <a href="#" class="logo">
+                <img src="snb.svg" alt="SNB Tech logo">
+              </a>
+    
+              <p class="section-text">
+                Your trusted partner in web solutions and digital transformation.
+              </p>
+    
+              <div class="location-text">
+                <div class="location-icon">
+                  <ion-icon name="location-outline"></ion-icon>
+                </div>
+    
+                <address class="address">
+                  Kigali, Rwanda.
+                </address>
+              </div>
+    
+            </div>
+
+    
+            <div class="contact"  id="contact">
+              <p class="h3 contact-title">Contact Us</p>
+    
+              <ul class="contact-list">
+    
+                <li class="contact-item">
+                  <div class="contact-icon">
+                    <ion-icon name="mail-outline"></ion-icon>
+                  </div>
+    
+                  <a href="mailto:hello@snbtech.com" class="contact-link">hello@snbtech.com</a>
+                </li>
+    
+                <li class="contact-item">
+                  <div class="contact-icon">
+                    <ion-icon name="call-outline"></ion-icon>
+                  </div>
+    
+                  <a href="tel:+14854560102" class="contact-link">+250-799-301-196</a>
+                </li>
+                  
+    
+              </ul>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="footer-bottom">
+          <div class="container">
+    
+            <p class="copyright">
+              &copy; 2025 <a href="https://www.snbtech.com">SNB Tech</a>. All Rights Reserved
+            </p>
+    
+            <ul class="social-list">
+
+                <li>
+                    <a href="https://wa.me/254799799097" class="social-link" target="_blank" rel="noopener noreferrer">
+                      <ion-icon name="logo-whatsapp"></ion-icon>
+                    </a>
+                  </li>
+                  
+    
+              <li>
+                <a href="https://x.com/snb_solutions?t=KM4eBL_8YWmTKdNru8ADSQ&s=09" class="social-link">
+                  <ion-icon name="logo-twitter"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="https://www.linkedin.com/company/snb-tech" class="social-link">
+                  <ion-icon name="logo-linkedin"></ion-icon>
+                </a>
+              </li>
+    
+              <li>
+                <a href="https://www.instagram.com/snbtec?igsh=czIxZm5uNW16ZTh1" class="social-link">
+                  <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+              </li>
+    
+            </ul>
+    
+          </div>
+        </div>
+    
+      </footer>
+
+
+
+    <!-- 
+     - #GO TO TOP
+     -->
+
+    <a href="#top" class="go-top active" data-go-top>
+      <ion-icon name="chevron-up-outline"></ion-icon>
+    </a>
+    
+
+
+    <!--
+     - custom js link
+    -->
+     <script src="assets/js/script.js"></script>
+
+    <!--
+     - ionicon links
+    -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
